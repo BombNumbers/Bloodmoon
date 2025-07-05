@@ -47,7 +47,7 @@ public class ClientBloodmoonHandler
 	{
 		if (isBloodmoonActive() && BloodmoonConfig.APPEARANCE.RED_MOON)
 		{
-			GL11.glColor3f(0.8f, 0, 0);
+			GL11.glColor3f(0, 0.8f, 0);
 		}
 	}
 
