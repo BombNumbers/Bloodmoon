@@ -69,7 +69,7 @@ public class BloodmoonConfig
 	{
 		@Name(value = "Chance")
 		@Comment(value = { "The chance of a bloodmoon occuring at the beginning of a night (0=Never;1=Every night;0.05=5% of all nights)" })
-		public double CHANCE = 0.05;
+		public double CHANCE = 0.04;
 
 		@Name(value = "Fullmoon")
 		@Comment(value = { "Whether there should be a bloodmoon whenever there is a full moon" })
@@ -87,15 +87,15 @@ public class BloodmoonConfig
 	{
 		@Name(value = "SpawnSpeed")
 		@Comment(value = { "How much faster enemys spawn on a bloodmoon (0=Vanilla)" })
-		public int SPAWN_SPEED = 4;
+		public int SPAWN_SPEED = 0;
 
 		@Name(value = "SpawnLimitMultiplier")
 		@Comment(value = { "With which number should the default entity limit be multiplicated on a blood moon" })
-		public int SPAWN_LIMIT_MULT = 4;
+		public int SPAWN_LIMIT_MULT = 2;
 
 		@Name(value = "SpawnRange")
 		@Comment(value = { "How close can enemys spawn next to the player on a bloodmoon in blocks? (Vanilla=24)" })
-		public int SPAWN_RANGE = 2;
+		public int SPAWN_RANGE = 24;
 
 		@Name(value = "WorldSpawnDistance")
 		@Comment(value = { "How close can enemys spawn next to the World Spawn (Vanilla=24)" })
@@ -107,7 +107,7 @@ public class BloodmoonConfig
 		
 		@Name(value = "SpawnBlacklist")
 		@Comment(value = { "Monsters which names are on this list won't get spawned by the bloodmoon (Has no effect when a whitelist is active). (Example: \"Skeleton,Spider\")" })
-		public String[] SPAWN_BLACKLIST = new String[0];
+		public String[] SPAWN_BLACKLIST = new String[\"Creeper,Zombie,Skeleton,Spider,Enderman,Witch\"];
 	}
 
 	// Cache
